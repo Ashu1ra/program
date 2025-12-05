@@ -1,0 +1,11 @@
+C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\obj\Debug\net10.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\obj\Debug\net10.0\Domain.AssemblyInfoInputs.cache
+C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\obj\Debug\net10.0\Domain.AssemblyInfo.cs
+C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\obj\Debug\net10.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\bin\Debug\net10.0\Domain.deps.json
+C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\bin\Debug\net10.0\Domain.dll
+C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\bin\Debug\net10.0\Domain.pdb
+C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\obj\Debug\net10.0\Domain.dll
+C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\obj\Debug\net10.0\refint\Domain.dll
+C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\obj\Debug\net10.0\Domain.pdb
+C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\obj\Debug\net10.0\ref\Domain.dll
