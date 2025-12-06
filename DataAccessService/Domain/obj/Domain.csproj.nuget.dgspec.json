@@ -50,12 +50,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "dependencies": {
-            "SharpProj.NetTopologySuite": {
-              "target": "Package",
-              "version": "[9.5001.295, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

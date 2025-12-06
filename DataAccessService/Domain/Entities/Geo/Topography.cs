@@ -1,18 +1,54 @@
-﻿using DataAccessService.Domain.ValueObjects.Geo;
+﻿using DataAccessService.Domain.Common;
+using DataAccessService.Domain.ValueObjects.Geo;
 
 namespace DataAccessService.Domain.Entities.Geo
 {
-    public class Topography
+    public class Topography : AggregateRoot<long>
     {
-        public long Id { get; set; }
-        public long LinkSite { get; set; }
-        public long LinkDataSource { get; set; } 
-        public MultiPolygon Area { get; set; }
-        public string? Description { get; set; }
-        public byte[] RasterFile { get; set; }
-        public string? Metadata { get; set; } = "{ }";
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
-        public long OwnerUserId { get; set; }
+        public long LinkSite { get; private set; }
+        public long LinkDataSource { get; private set; } 
+        public MultiPolygon Area { get; private set; }
+        public string? Description { get; private set; }
+        public byte[] RasterFile { get; private set; }
+        public string? Metadata { get; private set; } = "{ }";
+        public DateTime CreatedAt { get; private set; }
+        public DateTime? UpdatedAt { get; private set; }
+        public long OwnerUserId { get; private set; }
+
+        private Topography() { }
+
+        public static Topography Create(
+            long siteId, long dataSourceId, MultiPolygon area, byte[] raster, string metadata, long owner)
+        {
+            return new Topography
+            {
+                LinkSite = siteId,
+                LinkDataSource = dataSourceId,
+                Area = area,
+                RasterFile = raster,
+                Metadata = metadata,
+                OwnerUserId = owner,
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
+            };
+        }
+
+        public void UpdateArea(MultiPolygon area)
+        {
+            Area = area;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void ReplaceRaster(byte[] newRaster)
+        {
+            RasterFile = newRaster;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void UpdateMetadata(string metadata)
+        {
+            Metadata = metadata;
+            UpdatedAt = DateTime.UtcNow;
+        }
     }
 }

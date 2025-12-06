@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{623AAC51-7110-419F-96B0-F9DA98C227CE}|Domain\\Domain.csproj|c:\\users\\ashur\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\gisbim_geotek\\services\\dataaccessservice\\domain\\entities\\auth\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{623AAC51-7110-419F-96B0-F9DA98C227CE}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\auth\\useraccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{523D8FA7-A733-4C9B-B612-BD0264368EA1}|Application\\Application.csproj|c:\\users\\ashur\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\gisbim_geotek\\services\\dataaccessservice\\application\\dto\\auth\\useraccountresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{523D8FA7-A733-4C9B-B612-BD0264368EA1}|Application\\Application.csproj|solutionrelative:application\\dto\\auth\\useraccountresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{523D8FA7-A733-4C9B-B612-BD0264368EA1}|Application\\Application.csproj|c:\\users\\ashur\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\gisbim_geotek\\services\\dataaccessservice\\application\\dto\\auth\\updateuseraccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{523D8FA7-A733-4C9B-B612-BD0264368EA1}|Application\\Application.csproj|solutionrelative:application\\dto\\auth\\updateuseraccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{523D8FA7-A733-4C9B-B612-BD0264368EA1}|Application\\Application.csproj|c:\\users\\ashur\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\gisbim_geotek\\services\\dataaccessservice\\application\\dto\\auth\\createuseraccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{523D8FA7-A733-4C9B-B612-BD0264368EA1}|Application\\Application.csproj|solutionrelative:application\\dto\\auth\\createuseraccountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserAccount.cs",
-              "DocumentMoniker": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\Domain\\Entities\\Auth\\UserAccount.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Auth\\UserAccount.cs",
-              "ToolTip": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\Domain\\Entities\\Auth\\UserAccount.cs",
-              "RelativeToolTip": "Domain\\Entities\\Auth\\UserAccount.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "UserAccountResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\Application\\DTO\\Auth\\UserAccountResponseDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTO\\Auth\\UserAccountResponseDto.cs",
+              "ToolTip": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\Application\\DTO\\Auth\\UserAccountResponseDto.cs",
+              "RelativeToolTip": "Application\\DTO\\Auth\\UserAccountResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T18:15:21.513Z",
+              "WhenOpened": "2025-12-06T19:52:33.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateUserAccountDto.cs",
+              "DocumentMoniker": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\Application\\DTO\\Auth\\UpdateUserAccountDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTO\\Auth\\UpdateUserAccountDto.cs",
+              "ToolTip": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\Application\\DTO\\Auth\\UpdateUserAccountDto.cs",
+              "RelativeToolTip": "Application\\DTO\\Auth\\UpdateUserAccountDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T19:52:10.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateUserAccountDto.cs",
+              "DocumentMoniker": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\Application\\DTO\\Auth\\CreateUserAccountDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTO\\Auth\\CreateUserAccountDto.cs",
+              "ToolTip": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\Application\\DTO\\Auth\\CreateUserAccountDto.cs",
+              "RelativeToolTip": "Application\\DTO\\Auth\\CreateUserAccountDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T19:51:57.373Z",
               "EditorCaption": ""
             }
           ]

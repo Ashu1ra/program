@@ -1,11 +1,19 @@
-﻿using DataAccessService.Domain.ValueObjects.Auth;
+﻿using DataAccessService.Domain.Common;
+using DataAccessService.Domain.ValueObjects;
 
 namespace DataAccessService.Domain.Entities.Auth
 {
-    public class GroupList
+    public class GroupList : AggregateRoot<long>
     {
-        public long Id { get; set; }
-        public GroupName Name { get; set; }
-        public string? Description { get; set; }
+        public Name Name { get; private set; }
+        public string? Description { get; private set; }
+
+        private GroupList() { }
+
+        public static GroupList Create(Name name, string? description = null)
+        => new GroupList { Name = name, Description = description };
+
+        public void Rename(Name name) => Name = name;
+        public void UpdateDescription(string? description) => Description = description;
     }
 }

@@ -1,156 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {
-      "NetTopologySuite/2.2.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/NetTopologySuite.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/NetTopologySuite.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "SharpProj.Core/9.5001.295": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp/SharpProj.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win-arm64/lib/netcoreapp/SharpProj.dll": {
-            "assetType": "runtime",
-            "rid": "win-arm64"
-          },
-          "runtimes/win-x64/lib/netcoreapp/SharpProj.dll": {
-            "assetType": "runtime",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/lib/netcoreapp/SharpProj.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          }
-        }
-      },
-      "SharpProj.NetTopologySuite/9.5001.295": {
-        "type": "package",
-        "dependencies": {
-          "NetTopologySuite": "2.2.0",
-          "SharpProj.Core": "[9.5001.295]"
-        },
-        "compile": {
-          "lib/net47/SharpProj.NetTopologySuite.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net47/SharpProj.NetTopologySuite.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Memory/4.5.3": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
-        }
-      }
-    }
+    "net9.0": {}
   },
-  "libraries": {
-    "NetTopologySuite/2.2.0": {
-      "sha512": "nGsgH686NvvmnD2FywpF0et1J8sKO734Jrbgc5tWQ3CjPUIUVJgN6BeNHtFe51+AvNGL9rJkbmoCCrH+R+egFA==",
-      "type": "package",
-      "path": "nettopologysuite/2.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "icon.png",
-        "lib/netstandard2.0/NetTopologySuite.dll",
-        "lib/netstandard2.0/NetTopologySuite.xml",
-        "nettopologysuite.2.2.0.nupkg.sha512",
-        "nettopologysuite.nuspec"
-      ]
-    },
-    "SharpProj.Core/9.5001.295": {
-      "sha512": "PFZM9cXMsFGnzmjRdCiuLt9adoSS4Zgg/PlF8Atcpxv9ohVNlmBCVOjbPlC26giRTlM9+WYwX5Osgx+mulV71w==",
-      "type": "package",
-      "path": "sharpproj.core/9.5001.295",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net47/SharpProj.dll",
-        "lib/net47/SharpProj.xml",
-        "ref/net47/SharpProj.dll",
-        "ref/net47/SharpProj.xml",
-        "ref/netcoreapp/SharpProj.dll",
-        "ref/netcoreapp/SharpProj.xml",
-        "runtimes/win-arm64/lib/netcoreapp/SharpProj.dll",
-        "runtimes/win-arm64/lib/netcoreapp/SharpProj.xml",
-        "runtimes/win-x64/lib/net47/SharpProj.dll",
-        "runtimes/win-x64/lib/net47/SharpProj.xml",
-        "runtimes/win-x64/lib/netcoreapp/SharpProj.dll",
-        "runtimes/win-x64/lib/netcoreapp/SharpProj.xml",
-        "runtimes/win-x86/lib/net47/SharpProj.dll",
-        "runtimes/win-x86/lib/net47/SharpProj.xml",
-        "runtimes/win-x86/lib/netcoreapp/SharpProj.dll",
-        "runtimes/win-x86/lib/netcoreapp/SharpProj.xml",
-        "sharpproj.core.9.5001.295.nupkg.sha512",
-        "sharpproj.core.nuspec"
-      ]
-    },
-    "SharpProj.NetTopologySuite/9.5001.295": {
-      "sha512": "se56KR/8S4mwGQdbVpHRsggkAqFAC9iBkipPMPzwZBfaqj1Nh9K6Uftt/CPqOCYEMlrmww+MSnsFD5JG1/UJiQ==",
-      "type": "package",
-      "path": "sharpproj.nettopologysuite/9.5001.295",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net47/SharpProj.NetTopologySuite.dll",
-        "lib/net47/SharpProj.NetTopologySuite.xml",
-        "lib/netcore/SharpProj.NetTopologySuite.dll",
-        "lib/netcore/SharpProj.NetTopologySuite.xml",
-        "sharpproj.nettopologysuite.9.5001.295.nupkg.sha512",
-        "sharpproj.nettopologysuite.nuspec"
-      ]
-    },
-    "System.Memory/4.5.3": {
-      "sha512": "3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
-      "type": "package",
-      "path": "system.memory/4.5.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.1/System.Memory.dll",
-        "lib/netstandard1.1/System.Memory.xml",
-        "lib/netstandard2.0/System.Memory.dll",
-        "lib/netstandard2.0/System.Memory.xml",
-        "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.3.nupkg.sha512",
-        "system.memory.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net9.0": [
-      "SharpProj.NetTopologySuite >= 9.5001.295"
-    ]
+    "net9.0": []
   },
   "packageFolders": {
     "C:\\Users\\ashur\\.nuget\\packages\\": {},
@@ -202,12 +57,6 @@
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
-        "dependencies": {
-          "SharpProj.NetTopologySuite": {
-            "target": "Package",
-            "version": "[9.5001.295, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -227,17 +76,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Пакет \"SharpProj.NetTopologySuite 9.5001.295\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net9.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "libraryId": "SharpProj.NetTopologySuite",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  }
 }

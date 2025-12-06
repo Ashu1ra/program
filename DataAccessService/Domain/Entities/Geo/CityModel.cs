@@ -1,17 +1,51 @@
-﻿using DataAccessService.Domain.ValueObjects.Geo;
+﻿using DataAccessService.Domain.Common;
+using DataAccessService.Domain.ValueObjects.Geo;
 
 namespace DataAccessService.Domain.Entities.Geo
 {
-    public class CityModel
+    public class CityModel : AggregateRoot<long>
     {
-        public long Id { get; set; }
-        public long LinkSite { get; set; }
-        public ModelFormat Format { get; set; }
-        public MultiPolygon Area { get; set; }
-        public byte[] FileData { get; set; }
-        public string? Metadata { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime? UpdatedAt { get; set; }
-        public long OwnerUserId { get; set; }
+        public long LinkSite { get; private set; }
+        public ModelFormat Format { get; private set; }
+        public MultiPolygon Area { get; private set; }
+        public byte[] FileData { get; private set; }
+        public string? Metadata { get; private set; }
+        public DateTime CreatedAt { get; private set; }
+        public DateTime? UpdatedAt { get; private set; }
+        public long OwnerUserId { get; private set; }
+
+        private CityModel() { }
+
+        public static CityModel Create(
+            long siteId, ModelFormat format, byte[] fileData, string metadata)
+        {
+            return new CityModel
+            {
+                LinkSite = siteId,
+                Format = format,
+                FileData = fileData,
+                Metadata = metadata,
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
+            };
+        }
+
+        public void ReplaceFile(byte[] newFile)
+        {
+            FileData = newFile;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void UpdateMetadata(string metadata)
+        {
+            Metadata = metadata;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void UpdateFormat(ModelFormat format)
+        {
+            Format = format;
+            UpdatedAt = DateTime.UtcNow;
+        }
     }
 }

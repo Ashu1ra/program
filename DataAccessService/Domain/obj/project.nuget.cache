@@ -1,26 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RqeBsmCzj3k=",
+  "dgSpecHash": "7oIL/4QlprI=",
   "success": true,
   "projectFilePath": "C:\\Users\\ashur\\OneDrive\\Рабочий стол\\GisBim_geotek\\Services\\DataAccessService\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\ashur\\.nuget\\packages\\nettopologysuite\\2.2.0\\nettopologysuite.2.2.0.nupkg.sha512",
-    "C:\\Users\\ashur\\.nuget\\packages\\sharpproj.core\\9.5001.295\\sharpproj.core.9.5001.295.nupkg.sha512",
-    "C:\\Users\\ashur\\.nuget\\packages\\sharpproj.nettopologysuite\\9.5001.295\\sharpproj.nettopologysuite.9.5001.295.nupkg.sha512",
-    "C:\\Users\\ashur\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
-  ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "message": "Пакет \"SharpProj.NetTopologySuite 9.5001.295\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net9.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
-      "projectPath": "C:\\Users\\ashur\\OneDrive\\Рабочий стол\\GisBim_geotek\\Services\\DataAccessService\\Domain\\Domain.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\ashur\\OneDrive\\Рабочий стол\\GisBim_geotek\\Services\\DataAccessService\\Domain\\Domain.csproj",
-      "libraryId": "SharpProj.NetTopologySuite",
-      "targetGraphs": [
-        "net9.0"
-      ]
-    }
-  ]
+  "expectedPackageFiles": [],
+  "logs": []
 }
