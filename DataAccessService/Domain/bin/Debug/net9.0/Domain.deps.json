@@ -1,0 +1,89 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Domain/1.0.0": {
+        "dependencies": {
+          "SharpProj.NetTopologySuite": "9.5001.295"
+        },
+        "runtime": {
+          "Domain.dll": {}
+        }
+      },
+      "NetTopologySuite/2.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "SharpProj.Core/9.5001.295": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/lib/netcoreapp/SharpProj.dll": {
+            "rid": "win-arm64",
+            "assetType": "runtime",
+            "assemblyVersion": "9.5001.295.0",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/lib/netcoreapp/SharpProj.dll": {
+            "rid": "win-x64",
+            "assetType": "runtime",
+            "assemblyVersion": "9.5001.295.0",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/lib/netcoreapp/SharpProj.dll": {
+            "rid": "win-x86",
+            "assetType": "runtime",
+            "assemblyVersion": "9.5001.295.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SharpProj.NetTopologySuite/9.5001.295": {
+        "dependencies": {
+          "NetTopologySuite": "2.2.0",
+          "SharpProj.Core": "9.5001.295"
+        },
+        "runtime": {
+          "lib/net47/SharpProj.NetTopologySuite.dll": {
+            "assemblyVersion": "9.5001.295.0",
+            "fileVersion": "9.5001.295.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NetTopologySuite/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nGsgH686NvvmnD2FywpF0et1J8sKO734Jrbgc5tWQ3CjPUIUVJgN6BeNHtFe51+AvNGL9rJkbmoCCrH+R+egFA==",
+      "path": "nettopologysuite/2.2.0",
+      "hashPath": "nettopologysuite.2.2.0.nupkg.sha512"
+    },
+    "SharpProj.Core/9.5001.295": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PFZM9cXMsFGnzmjRdCiuLt9adoSS4Zgg/PlF8Atcpxv9ohVNlmBCVOjbPlC26giRTlM9+WYwX5Osgx+mulV71w==",
+      "path": "sharpproj.core/9.5001.295",
+      "hashPath": "sharpproj.core.9.5001.295.nupkg.sha512"
+    },
+    "SharpProj.NetTopologySuite/9.5001.295": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-se56KR/8S4mwGQdbVpHRsggkAqFAC9iBkipPMPzwZBfaqj1Nh9K6Uftt/CPqOCYEMlrmww+MSnsFD5JG1/UJiQ==",
+      "path": "sharpproj.nettopologysuite/9.5001.295",
+      "hashPath": "sharpproj.nettopologysuite.9.5001.295.nupkg.sha512"
+    }
+  }
+}

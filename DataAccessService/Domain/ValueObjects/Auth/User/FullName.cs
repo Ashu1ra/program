@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DataAccessService.Domain.ValueObjects.Auth
+﻿namespace DataAccessService.Domain.ValueObjects.Auth
 {
     public record FullName
     {

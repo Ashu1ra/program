@@ -9,3 +9,5 @@ C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAcces
 C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\obj\Debug\net9.0\refint\Domain.dll
 C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\obj\Debug\net9.0\Domain.pdb
 C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\obj\Debug\net9.0\ref\Domain.dll
+C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\obj\Debug\net9.0\Domain.csproj.AssemblyReference.cache
+C:\Users\ashur\OneDrive\Рабочий стол\GisBim_geotek\Services\DataAccessService\Domain\obj\Debug\net9.0\Domain.sourcelink.json
