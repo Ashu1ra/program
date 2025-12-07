@@ -8,8 +8,6 @@
 
   <ItemGroup>
     <Folder Include="DTO\Ref\" />
-    <Folder Include="DTO\Geo\" />
-    <Folder Include="DTO\Igt\" />
     <Folder Include="DTO\Test\" />
     <Folder Include="DTO\Import\" />
     <Folder Include="Services\" />
