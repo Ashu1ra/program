@@ -7,9 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTO\Ref\" />
-    <Folder Include="DTO\Test\" />
-    <Folder Include="DTO\Import\" />
     <Folder Include="Services\" />
     <Folder Include="Commands\" />
     <Folder Include="Queries\" />

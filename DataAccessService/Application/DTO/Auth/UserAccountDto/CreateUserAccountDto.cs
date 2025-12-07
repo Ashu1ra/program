@@ -5,5 +5,6 @@ public record CreateUserAccountDto(
     string Email,
     string Password,
     string FullName,
-    string? Metadata
+    string Metadata,
+    long OwnerUserId
 );
