@@ -1,6 +1,4 @@
-﻿using DataAccessService.Domain.ValueObjects.Auth;
-
-namespace DataAccessService.Domain.ValueObjects.Ref
+﻿namespace DataAccessService.Domain.ValueObjects.Ref
 {
     public record TestCategory
     {

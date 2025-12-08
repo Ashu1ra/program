@@ -8,7 +8,7 @@ namespace DataAccessService.Domain.Entities.Geo
     {
         public long LinkProject { get; private set; }
         public Name Name { get; set; }
-        public MultiPolygon Area { get; private set; }
+        public Polygon Area { get; private set; }
         public string? Description { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public DateTime? UpdatedAt { get; private set; }

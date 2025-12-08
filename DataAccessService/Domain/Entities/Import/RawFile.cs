@@ -6,13 +6,13 @@ namespace DataAccessService.Domain.Entities.Import
 {
     public class RawFile : AggregateRoot<long>
     {
-        public long LinkDataSource { get; set; }
-        public Name FileName { get; set; }
-        public long LinkListFileFormat { get; set; }
-        public SourceLink SourceLink { get; set; }
-        public byte[] FileData { get; set; }
-        public DateTime UploadAt { get; set; } 
-        public long OwnerUserId { get; set; }
+        public long LinkDataSource { get; private set; }
+        public Name FileName { get; private set; }
+        public long LinkListFileFormat { get; private set; }
+        public SourceLink SourceLink { get; private set; }
+        public byte[] FileData { get; private set; }
+        public DateTime UploadAt { get; private set; } 
+        public long OwnerUserId { get; private set; }
 
         private readonly List<RawFileEntityLink> _entityLinks = new();
         public IReadOnlyCollection<RawFileEntityLink> EntityLinks => _entityLinks.AsReadOnly();

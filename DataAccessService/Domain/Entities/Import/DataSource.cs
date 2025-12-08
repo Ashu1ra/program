@@ -6,11 +6,11 @@ namespace DataAccessService.Domain.Entities.Import
 {
     public class DataSource : AggregateRoot<long>
     {
-        public Name Name { get; set; }
-        public long LinkListSourceType { get; set; }
-        public SourceLink SourceLink { get; set; }
-        public string? Description { get; set; } = string.Empty;
-        public long OwnerUserId { get; set; }
+        public Name Name { get; private set; }
+        public long LinkListSourceType { get; private set; }
+        public SourceLink SourceLink { get; private set; }
+        public string? Description { get; private set; } = string.Empty;
+        public long OwnerUserId { get; private set; }
 
         private DataSource() { }
 

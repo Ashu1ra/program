@@ -15,7 +15,7 @@ namespace DataAccessService.Domain.Entities.Ref
         public static ListBoreholeStandard Create(Mnemonic mnemonic, Name name, string? description = null)
             => new ListBoreholeStandard
             {
-                Mnemonic = mnemonic.,
+                Mnemonic = mnemonic,
                 Name = name,
                 Description = description
             };

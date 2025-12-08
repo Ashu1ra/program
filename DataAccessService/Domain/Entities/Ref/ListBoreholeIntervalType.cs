@@ -2,7 +2,7 @@
 using DataAccessService.Domain.ValueObjects;
 using DataAccessService.Domain.ValueObjects.Ref;
 
-namespace Domain.Entities.Ref
+namespace DataAccessService.Domain.Entities.Ref
 {
     public class ListBoreholeIntervalType : AggregateRoot<long>
     {

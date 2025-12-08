@@ -7,18 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Persistence\Configurations\Auth\" />
-    <Folder Include="Persistence\Configurations\Ref\" />
-    <Folder Include="Persistence\Configurations\Geo\" />
-    <Folder Include="Persistence\Configurations\Igt\" />
-    <Folder Include="Persistence\Configurations\Test\" />
-    <Folder Include="Persistence\Configurations\Import\" />
-    <Folder Include="Persistence\Converters\Geo\" />
-    <Folder Include="Persistence\Converters\Igt\" />
-    <Folder Include="Persistence\Audit\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.11" />
     <PackageReference Include="NetTopologySuite" Version="2.6.0" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
@@ -28,6 +16,10 @@
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Persistence\Repositories\" />
   </ItemGroup>
 
 </Project>
