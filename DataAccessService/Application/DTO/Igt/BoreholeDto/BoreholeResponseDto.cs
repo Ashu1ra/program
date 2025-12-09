@@ -1,19 +1,19 @@
-﻿namespace DataAccessService.Application.DTO.Igt;
+﻿using DataAccessService.Application.DTO.Geo;
 
-using DataAccessService.Application.DTO.Geo;
+namespace DataAccessService.Application.DTO.Igt;
 
 public record BoreholeResponseDto(
     long Id,
-    long SiteId,
+    long LinkSite,
     PointZDto Location,
-    long BoreholeTypeId,
+    long LinkListBoreholeType,
     double DepthMin,
     double DepthMax,
-    long StandardId,
+    long LinkListBoreholeStandard,
     DateTime DateStart,
-    DateTime DateEnd,
-    string Metadata,
+    DateTime? DateEnd,
+    string? Metadata,
     DateTime CreatedAt,
-    DateTime UpdatedAt,
+    DateTime? UpdatedAt,
     long OwnerUserId
 );

@@ -3,6 +3,5 @@
 public record GroupListResponseDto(
     long Id,
     string Name,
-    string? Description,
-    long OwnerUserId
+    string? Description
 );

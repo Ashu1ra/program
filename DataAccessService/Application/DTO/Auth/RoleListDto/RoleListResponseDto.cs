@@ -3,6 +3,5 @@
 public record RoleListResponseDto(
     long Id,
     string Name,
-    string? Description,
-    long OwnerUserId
+    string? Description
 );

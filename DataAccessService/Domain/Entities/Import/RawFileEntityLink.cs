@@ -1,25 +1,22 @@
 ﻿using DataAccessService.Domain.Common;
 
-namespace DataAccessService.Domain.Entities.Import
+public class RawFileEntityLink : AggregateRoot<long>
 {
-    public class RawFileEntityLink : Entity<long>
+    public long RawFileId { get; private set; }
+    public string EntitySchema { get; private set; }
+    public string EntityName { get; private set; }
+    public long ObjectId { get; private set; }
+
+    private RawFileEntityLink() { }
+
+    public static RawFileEntityLink Create(long rawFileId, string schema, string entity, long objectId)
     {
-        public long LinkRawFile { get; private set; }
-        public string EntitySchema { get; private set; } = string.Empty;
-        public string EntityName { get; private set; } = string.Empty;
-        public long ObjectId { get; private set; }
-        public DateTime CreatedAt { get; private set; }
-
-        private RawFileEntityLink(long rawFileId, string schema, string name, long objectId)
+        return new RawFileEntityLink
         {
-            LinkRawFile = rawFileId;
-            EntitySchema = schema;
-            EntityName = name;
-            ObjectId = objectId;
-            CreatedAt = DateTime.UtcNow;
-        }
-
-        public static RawFileEntityLink Create(long rawFileId, string schema, string name, long objectId)
-            => new RawFileEntityLink(rawFileId, schema, name, objectId);
+            RawFileId = rawFileId,
+            EntitySchema = schema,
+            EntityName = entity,
+            ObjectId = objectId
+        };
     }
 }

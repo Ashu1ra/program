@@ -2,10 +2,10 @@
 
 public record RawFileResponseDto(
     long Id,
-    long DataSourceId,
-    long FileFormatId,
-    string Filename,
-    string UploadedBy,
+    long LinkDataSource,
+    string FileName,
+    long LinkListFileFormat,
+    string SourceLink,
     DateTime UploadAt,
     long OwnerUserId
 );

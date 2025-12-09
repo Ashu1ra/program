@@ -1,10 +1,9 @@
 ﻿namespace DataAccessService.Application.DTO.Geo;
 
 public record CreateTopographyDto(
-    long SiteId,
-    long DataSourceId,
+    long LinkSite,
+    long LinkDataSource,
     MultiPolygonDto Area,
     byte[] RasterFile,
-    string Metadata,
-    long OwnerUserId
+    string? Metadata
 );

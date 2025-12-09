@@ -1,5 +1,8 @@
-﻿public class ValidationException : Exception
+﻿namespace DataAccessService.Application.Common.Exceptions
 {
-    public ValidationException(string message)
-        : base(message) { }
+    public class ValidationException : Exception
+    {
+        public ValidationException(string message)
+            : base(message) { }
+    }
 }

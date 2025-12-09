@@ -1,9 +1,8 @@
 ﻿namespace DataAccessService.Application.DTO.Igt;
 
 public record CreateBoreholeIntervalDto(
-    long BoreholeId,
+    long LinkBorehole,
     DepthIntervalDto Interval,
-    long IntervalTypeId,
-    string Metadata,
-    long OwnerUserId
+    long LinkListBoreholeIntervalType,
+    string? Metadata
 );

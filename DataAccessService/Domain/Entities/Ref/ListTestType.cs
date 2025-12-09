@@ -25,6 +25,8 @@ namespace DataAccessService.Domain.Entities.Ref
             };
 
         public void Rename(Name name) => Name = name;
+        public void UpdateCode(Code code) => Code = code;
+        public void UpdateCategory(TestCategory category) => Category = category;
         public void UpdateDescription(string? desc) => Description = desc;
     }
 }

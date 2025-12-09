@@ -1,9 +1,8 @@
 ﻿namespace DataAccessService.Application.DTO.Geo;
 
 public record CreateSiteDto(
-    long ProjectId,
+    long LinkProject,
     string Name,
-    MultiPolygonDto Area,
-    string? Description,
-    long OwnerUserId
+    PolygonDto Area,
+    string? Description
 );

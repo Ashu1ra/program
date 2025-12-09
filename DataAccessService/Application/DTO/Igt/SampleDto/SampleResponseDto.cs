@@ -2,15 +2,12 @@
 
 public record SampleResponseDto(
     long Id,
-    long IntervalId,
+    long LinkBoreholeInterval,
     string Number,
-    double Depth,
-    double DepthFrom,
-    double DepthTo,
-    long StandardId,
-    string Metadata,
+    DepthIntervalDto Interval,
+    long LinkListSampleStandard,
     string? Description,
     DateTime CreatedAt,
-    DateTime UpdatedAt,
+    DateTime? UpdatedAt,
     long OwnerUserId
 );

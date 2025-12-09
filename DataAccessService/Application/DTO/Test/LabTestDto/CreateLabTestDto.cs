@@ -1,10 +1,9 @@
 ﻿namespace DataAccessService.Application.DTO.Test;
 
 public record CreateLabTestDto(
-    long SampleId,
-    long TestTypeId,
+    long LinkSample,
+    long LinkListTestType,
     string Results,
     DateTime TestDate,
-    string Metadata,
-    long OwnerUserId
+    string? Metadata
 );

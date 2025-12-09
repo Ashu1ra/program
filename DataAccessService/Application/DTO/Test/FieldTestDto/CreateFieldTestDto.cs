@@ -1,10 +1,9 @@
 ﻿namespace DataAccessService.Application.DTO.Test;
 
 public record CreateFieldTestDto(
-    long IntervalId,
-    long TestTypeId,
+    long LinkBoreholeInterval,
+    long LinkListTestType,
     string Results,
     DateTime TestDate,
-    string Metadata,
-    long OwnerUserId
+    string? Metadata
 );

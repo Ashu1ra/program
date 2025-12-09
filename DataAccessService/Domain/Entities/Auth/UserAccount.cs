@@ -12,11 +12,16 @@ namespace DataAccessService.Domain.Entities.Auth
 
         public DateTime CreatedAt { get; private set; }
         public DateTime? LastLogin { get; private set; }
-        public string Metadata { get; private set; } = "{  }";
+        public string Metadata { get; private set; } = "{}";
 
         private UserAccount() { }
 
-        public static UserAccount Create(UserLogin login, UserEmail email, PasswordHash password, FullName fullName, string metadata = "{}")
+        public static UserAccount Create(
+            UserLogin login,
+            UserEmail email,
+            PasswordHash password,
+            FullName fullName,
+            string metadata = "{}")
         {
             return new UserAccount
             {
@@ -30,27 +35,29 @@ namespace DataAccessService.Domain.Entities.Auth
             };
         }
 
-        public void ChangeEmail(UserEmail email) => Email = email;
-        public void ChangePassword(PasswordHash hash) => PasswordHash = hash;
-        public void UpdateFullName(FullName fullName) => FullName = fullName;
-        public void TouchLastLogin() => LastLogin = DateTime.UtcNow;
-        public void UpdateMetadata(string metadata) => Metadata = metadata;
-
-        public UserRole AssignRole(long roleId)
+        public void ChangeLogin(UserLogin login)
         {
-            return UserRole.Create(Id, roleId);
+            Login = login;
         }
-        public UserGroup AddToGroup(long groupId)
+        public void ChangeEmail(UserEmail email)
         {
-            return UserGroup.Create(Id, groupId);
+            Email = email;
         }
-        public UserRole RemoveRole(long roleId)
+        public void ChangePassword(PasswordHash hash)
         {
-            return UserRole.Create(Id, roleId);
+            PasswordHash = hash;
         }
-        public UserGroup RemoveGroup(long groupId)
+        public void UpdateFullName(FullName fullName)
         {
-            return UserGroup.Create(Id, groupId);
+            FullName = fullName;
+        }
+        public void UpdateMetadata(string metadata)
+        {
+            Metadata = metadata;
+        }
+        public void TouchLastLogin()
+        {
+            LastLogin = DateTime.UtcNow;
         }
     }
 }

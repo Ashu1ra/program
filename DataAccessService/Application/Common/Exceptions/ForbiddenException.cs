@@ -1,5 +1,8 @@
-﻿public class ForbiddenException : Exception
+﻿namespace DataAccessService.Application.Common.Exceptions
 {
-    public ForbiddenException(string message = "Access denied.")
-        : base(message) { }
+    public class ForbiddenException : Exception
+    {
+        public ForbiddenException(string message = "Access denied.")
+            : base(message) { }
+    }
 }

@@ -2,6 +2,5 @@
 
 public record CreateGroupListDto(
     string Name,
-    string? Description,
-    long OwnerUserId
+    string? Description
 );

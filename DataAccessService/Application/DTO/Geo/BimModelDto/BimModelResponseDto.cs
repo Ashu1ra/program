@@ -2,9 +2,11 @@
 
 public record BimModelResponseDto(
     long Id,
-    long SiteId,
+    long LinkSite,
     string Format,
-    string Metadata,
+    MultiPolygonDto Area,
+    string? Metadata,
     DateTime CreatedAt,
-    DateTime UpdatedAt
+    DateTime? UpdatedAt,
+    long OwnerUserId
 );

@@ -5,8 +5,7 @@ public record UserAccountResponseDto(
     string Login,
     string Email,
     string FullName,
-    string Metadata,
     DateTime CreatedAt,
-    DateTime LastLogin,
-    long OwnerUserId
+    DateTime? LastLogin,
+    string Metadata
 );

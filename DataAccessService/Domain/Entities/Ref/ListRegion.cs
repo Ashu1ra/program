@@ -17,5 +17,9 @@ namespace DataAccessService.Domain.Entities.Ref
             Code = code,
             Name = name
         };
+
+        public void UpdateMnemonic(Mnemonic mnemonic) => Mnemonic = mnemonic;
+        public void UpdateCode(Code code) => Code = code;
+        public void UpdateName(Name name) => Name = name;
     }
 }

@@ -16,18 +16,24 @@ namespace DataAccessService.Domain.Entities.Geo
 
         private CityModel() { }
 
-        public static CityModel Create(
-            long siteId, ModelFormat format, byte[] fileData, string metadata)
+        public static CityModel Create(long siteId, ModelFormat format, MultiPolygon area, byte[] fileData, string metadata)
         {
             return new CityModel
             {
                 LinkSite = siteId,
                 Format = format,
+                Area = area,
                 FileData = fileData,
                 Metadata = metadata,
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
             };
+        }
+
+        public void UpdateArea(MultiPolygon area)
+        {
+            Area = area;
+            UpdatedAt = DateTime.UtcNow;
         }
 
         public void ReplaceFile(byte[] newFile)

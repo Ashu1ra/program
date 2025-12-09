@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DataAccessService.Domain.Entities.Auth;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessService.InfrastructurePostgres.Persistence
 {
@@ -8,6 +9,10 @@ namespace DataAccessService.InfrastructurePostgres.Persistence
             : base(options)
         {
         }
+
+        public DbSet<AccessControl> AccessControls { get; set; }
+        public DbSet<UserGroup> UserGroups { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

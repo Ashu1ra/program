@@ -2,14 +2,14 @@
 
 public record ProjectResponseDto(
     long Id,
+    long LinkListRegion,
     string Name,
-    long RegionId,
-    long DataSourceId,
+    long LinkDataSource,
     PointZDto CenterLocation,
     MultiPolygonDto Area,
     DateTime DateStart,
-    string Metadata,
+    string? Description,
     DateTime CreatedAt,
-    DateTime UpdatedAt,
+    DateTime? UpdatedAt,
     long OwnerUserId
 );

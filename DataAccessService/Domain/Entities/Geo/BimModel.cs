@@ -7,7 +7,7 @@ namespace DataAccessService.Domain.Entities.Geo
     {
         public long LinkSite { get; private set; }
         public ModelFormat Format { get; private set; }
-        public MultiPolygon Area { get; private set; } 
+        public MultiPolygon Area { get; private set; }
         public byte[] FileData { get; private set; } 
         public string? Metadata { get; private set; } 
         public DateTime CreatedAt { get; private set; }
@@ -16,18 +16,23 @@ namespace DataAccessService.Domain.Entities.Geo
 
         private BimModel() { }
 
-        public static BimModel Create(
-            long siteId, ModelFormat format, byte[] data, string metadata)
+        public static BimModel Create(long siteId, ModelFormat format, MultiPolygon area, byte[] fileData, string metadata)
         {
             return new BimModel
             {
                 LinkSite = siteId,
                 Format = format,
-                FileData = data,
+                Area = area,
+                FileData = fileData,
                 Metadata = metadata,
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
             };
+        }
+        public void UpdateArea(MultiPolygon area)
+        {
+            Area = area;
+            UpdatedAt = DateTime.UtcNow;
         }
 
         public void ReplaceFile(byte[] newData)

@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84913D0D-6E41-4AE8-908C-6C868C8DB99B}|InfrastructurePostgres\\InfrastructurePostgres.csproj|c:\\users\\ashur\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\gisbim_geotek\\services\\dataaccessservice\\infrastructurepostgres\\persistence\\configurations\\auth\\useraccountconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84913D0D-6E41-4AE8-908C-6C868C8DB99B}|InfrastructurePostgres\\InfrastructurePostgres.csproj|solutionrelative:infrastructurepostgres\\persistence\\configurations\\auth\\useraccountconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{623AAC51-7110-419F-96B0-F9DA98C227CE}|Domain\\Domain.csproj|c:\\users\\ashur\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\gisbim_geotek\\services\\dataaccessservice\\domain\\valueobjects\\audit\\logoperationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{623AAC51-7110-419F-96B0-F9DA98C227CE}|Domain\\Domain.csproj|solutionrelative:domain\\valueobjects\\audit\\logoperationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{523D8FA7-A733-4C9B-B612-BD0264368EA1}|Application\\Application.csproj|c:\\users\\ashur\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\gisbim_geotek\\services\\dataaccessservice\\application\\features\\igt\\borehole\\commands\\deleteborehole\\deleteboreholehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{523D8FA7-A733-4C9B-B612-BD0264368EA1}|Application\\Application.csproj|solutionrelative:application\\features\\igt\\borehole\\commands\\deleteborehole\\deleteboreholehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserAccountConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\InfrastructurePostgres\\Persistence\\Configurations\\Auth\\UserAccountConfiguration.cs",
-              "RelativeDocumentMoniker": "InfrastructurePostgres\\Persistence\\Configurations\\Auth\\UserAccountConfiguration.cs",
-              "ToolTip": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\InfrastructurePostgres\\Persistence\\Configurations\\Auth\\UserAccountConfiguration.cs",
-              "RelativeToolTip": "InfrastructurePostgres\\Persistence\\Configurations\\Auth\\UserAccountConfiguration.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAgwDUAAAABAAAAAAAAAA==",
+              "Title": "DeleteBoreholeHandler.cs",
+              "DocumentMoniker": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\Application\\Features\\Igt\\Borehole\\Commands\\DeleteBorehole\\DeleteBoreholeHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Igt\\Borehole\\Commands\\DeleteBorehole\\DeleteBoreholeHandler.cs",
+              "ToolTip": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\Application\\Features\\Igt\\Borehole\\Commands\\DeleteBorehole\\DeleteBoreholeHandler.cs",
+              "RelativeToolTip": "Application\\Features\\Igt\\Borehole\\Commands\\DeleteBorehole\\DeleteBoreholeHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T11:31:15.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LogOperationType.cs",
-              "DocumentMoniker": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\Domain\\ValueObjects\\Audit\\LogOperationType.cs",
-              "RelativeDocumentMoniker": "Domain\\ValueObjects\\Audit\\LogOperationType.cs",
-              "ToolTip": "C:\\Users\\ashur\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\GisBim_geotek\\Services\\DataAccessService\\Domain\\ValueObjects\\Audit\\LogOperationType.cs",
-              "RelativeToolTip": "Domain\\ValueObjects\\Audit\\LogOperationType.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBcAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T11:03:50.445Z",
+              "WhenOpened": "2025-12-08T22:52:42.638Z",
               "EditorCaption": ""
             }
           ]

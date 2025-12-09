@@ -6,7 +6,5 @@ public record DataSourceResponseDto(
     long SourceTypeId,
     string? SourceLink,
     string? Description,
-    long OwnerUserId,
-    DateTime CreatedAt,
-    DateTime UpdatedAt
+    long OwnerUserId
 );

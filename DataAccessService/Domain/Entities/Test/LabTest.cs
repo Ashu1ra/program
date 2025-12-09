@@ -27,5 +27,17 @@ namespace DataAccessService.Domain.Entities.Test
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
             };
+
+        public void UpdateResults(string results)
+        {
+            Results = results;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void UpdateMetadata(string metadata)
+        {
+            Metadata = metadata;
+            UpdatedAt = DateTime.UtcNow;
+        }
     }
 }

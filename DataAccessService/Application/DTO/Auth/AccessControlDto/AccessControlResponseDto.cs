@@ -11,8 +11,5 @@ public record AccessControlResponseDto(
     bool CanRead,
     bool CanWrite,
     bool CanDelete,
-    string Metadata,
-    DateTime CreatedAt,
-    DateTime UpdatedAt,
-    long OwnerUserId
+    string Metadata
 );

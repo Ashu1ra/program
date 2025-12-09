@@ -1,13 +1,9 @@
 ﻿namespace DataAccessService.Application.DTO.Igt;
 
 public record CreateSampleDto(
-    long IntervalId,
+    long LinkBoreholeInterval,
     string Number,
-    double Depth,
-    double DepthFrom,
-    double DepthTo,
-    long StandardId,
-    string Metadata,
-    string? Description,
-    long OwnerUserId
+    DepthIntervalDto Interval,
+    long LinkListSampleStandard,
+    string? Description
 );

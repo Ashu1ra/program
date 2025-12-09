@@ -16,7 +16,7 @@ namespace DataAccessService.Domain.Entities.Geo
 
         private Site() { }
 
-        public static Site Create(long LinkProject, Name name, MultiPolygon area, long ownerUserId)
+        public static Site Create(long LinkProject, Name name, Polygon area, long ownerUserId)
             => new Site
             {
                 LinkProject = LinkProject,
@@ -27,7 +27,19 @@ namespace DataAccessService.Domain.Entities.Geo
                 UpdatedAt = DateTime.UtcNow
             };
 
-        public void UpdateArea(MultiPolygon area)
+        public void UpdateName(Name name)
+        {
+            Name = name;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void UpdateDescription(string? description)
+        {
+            Description = description;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void UpdateArea(Polygon area)
         {
             Area = area;
             UpdatedAt = DateTime.UtcNow;

@@ -2,12 +2,12 @@
 
 public record LabTestResponseDto(
     long Id,
-    long SampleId,
-    long TestTypeId,
+    long LinkSample,
+    long LinkListTestType,
     string Results,
     DateTime TestDate,
-    string Metadata,
+    string? Metadata,
     DateTime CreatedAt,
-    DateTime UpdatedAt,
+    DateTime? UpdatedAt,
     long OwnerUserId
 );

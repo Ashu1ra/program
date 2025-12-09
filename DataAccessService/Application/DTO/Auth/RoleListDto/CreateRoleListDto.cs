@@ -2,6 +2,5 @@
 
 public record CreateRoleListDto(
     string Name,
-    string? Description,
-    long OwnerUserId
+    string? Description
 );

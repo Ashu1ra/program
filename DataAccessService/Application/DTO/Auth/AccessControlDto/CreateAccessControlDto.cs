@@ -10,6 +10,5 @@ public record CreateAccessControlDto(
     bool CanRead,
     bool CanWrite,
     bool CanDelete,
-    string Metadata,
-    long OwnerUserId
+    string Metadata
 );

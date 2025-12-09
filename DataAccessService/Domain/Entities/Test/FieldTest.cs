@@ -15,17 +15,29 @@ namespace DataAccessService.Domain.Entities.Test
 
         private FieldTest() { }
 
-        public static FieldTest Create(long interval, long linkListTestType, string results, DateTime TestDate, string metadata, long ownerUserId)
+        public static FieldTest Create(long interval, long linkListTestType, string results, DateTime testDate, string metadata, long ownerUserId)
             => new FieldTest
             {
                 LinkBoreholeInterval = interval,
                 LinkListTestType = linkListTestType,
                 Results = results,
-                TestDate = TestDate,
+                TestDate = testDate,
                 Metadata = metadata,
                 OwnerUserId = ownerUserId,
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
             };
+
+        public void UpdateResults(string results)
+        {
+            Results = results;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void UpdateMetadata(string metadata)
+        {
+            Metadata = metadata;
+            UpdatedAt = DateTime.UtcNow;
+        }
     }
 }

@@ -1,12 +1,10 @@
 ﻿namespace DataAccessService.Application.DTO.Geo;
 
 public record CreateProjectDto(
+    long LinkListRegion,
     string Name,
-    long RegionId,
-    long DataSourceId,
+    long LinkDataSource,
     PointZDto CenterLocation,
     MultiPolygonDto Area,
-    DateTime DateStart,
-    string Metadata,
-    long OwnerUserId
+    string? Description
 );

@@ -21,7 +21,7 @@ namespace DataAccessService.Domain.Entities.Igt
         private Borehole() { }
 
         public static Borehole Create(
-            long site, PointZ location, long linkListBoreholeType, double dmin, double dmax, long linkListBoreholeStandard, DateTime dateStart, DateTime dateEnd, string metadata, long ownerUserId)
+            long site, PointZ location, long linkListBoreholeType, double dmin, double dmax, long linkListBoreholeStandard, DateTime dateStart, DateTime? dateEnd, string metadata, long ownerUserId)
             => new Borehole
             {
                 LinkSite = site,
@@ -37,6 +37,18 @@ namespace DataAccessService.Domain.Entities.Igt
                 CreatedAt = DateTime.UtcNow,
                 UpdatedAt = DateTime.UtcNow
             };
+
+        public void UpdateDepthMax(double depthMax)
+        {
+            DepthMax = depthMax;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void UpdateDateEnd(DateTime? dateEnd)
+        {
+            DateEnd = dateEnd;
+            UpdatedAt = DateTime.UtcNow;
+        }
 
         public void UpdateMetadata(string metadata)
         {

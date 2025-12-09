@@ -1,8 +1,9 @@
 ﻿namespace DataAccessService.Application.DTO.Geo;
 
 public record CreateBimModelDto(
-    long SiteId,
+    long LinkSite,
     string Format,
+    MultiPolygonDto Area,
     byte[] FileData,
-    string Metadata
+    string? Metadata
 );

@@ -2,11 +2,12 @@
 
 public record TopographyResponseDto(
     long Id,
-    long SiteId,
-    long DataSourceId,
+    long LinkSite,
+    long LinkDataSource,
     MultiPolygonDto Area,
-    string Metadata,
+    string? Description,
+    string? Metadata,
     DateTime CreatedAt,
-    DateTime UpdatedAt,
+    DateTime? UpdatedAt,
     long OwnerUserId
 );

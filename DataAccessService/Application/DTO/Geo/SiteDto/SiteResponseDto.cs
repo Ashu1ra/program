@@ -2,11 +2,11 @@
 
 public record SiteResponseDto(
     long Id,
-    long ProjectId,
+    long LinkProject,
     string Name,
-    MultiPolygonDto Area,
+    PolygonDto Area,
     string? Description,
     DateTime CreatedAt,
-    DateTime UpdatedAt,
+    DateTime? UpdatedAt,
     long OwnerUserId
 );

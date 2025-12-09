@@ -2,6 +2,7 @@
 
 public record UpdateBimModelDto(
     string? Format,
+    MultiPolygonDto? Area,
     byte[]? FileData,
     string? Metadata
 );

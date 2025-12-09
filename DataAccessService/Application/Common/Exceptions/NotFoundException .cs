@@ -1,5 +1,8 @@
-﻿public class NotFoundException : Exception
+﻿namespace DataAccessService.Application.Common.Exceptions
 {
-    public NotFoundException(string message = "Resource not found.")
-        : base(message) { }
+    public class NotFoundException : Exception
+    {
+        public NotFoundException(string message = "Resource not found.")
+            : base(message) { }
+    }
 }

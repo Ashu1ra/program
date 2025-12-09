@@ -33,6 +33,12 @@ namespace DataAccessService.Domain.Entities.Geo
                 OwnerUserId = ownerUserId
             };
 
+        public void UpdateName(Name name)
+        {
+            Name = name;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
         public void UpdateArea(MultiPolygon area)
         {
             Area = area;
@@ -42,6 +48,12 @@ namespace DataAccessService.Domain.Entities.Geo
         public void UpdateCenter(PointZ centerLocation)
         {
             CenterLocation = centerLocation;
+            UpdatedAt = DateTime.UtcNow;
+        }
+
+        public void UpdateDescription(string? description)
+        {
+            Description = description;
             UpdatedAt = DateTime.UtcNow;
         }
     }

@@ -2,12 +2,11 @@
 
 public record BoreholeIntervalResponseDto(
     long Id,
-    long BoreholeId,
-    double DepthFrom,
-    double DepthTo,
-    long IntervalTypeId,
-    string Metadata,
+    long LinkBorehole,
+    DepthIntervalDto Interval,
+    long LinkListBoreholeIntervalType,
+    string? Metadata,
     DateTime CreatedAt,
-    DateTime UpdatedAt,
+    DateTime? UpdatedAt,
     long OwnerUserId
 );
